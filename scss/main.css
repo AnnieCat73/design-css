@@ -1,3 +1,14 @@
+body {
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -74,5 +85,23 @@ select {
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+:root {
+  --clr-neutral-900: hsl(0, 0%, 9%);
+  --clr-neutral-400: hsl(210, 1%, 64%);
+  --clr-neutral-100: (210, 20%, 94%);
+  --clr-primary: hsl(12, 74%, 50%);
+}
+
+.fancy-card-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.fancy-card__image {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

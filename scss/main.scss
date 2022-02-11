@@ -1,2 +1,14 @@
-@import "./base/base.scss";
-@import "./base/reset.scss";
+@import "base";
+@import "layout";
+@import "reset";
+@import "components";
+@import "root";
+
+.fancy-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fancy-card__image {
+  display: none;
+}
