@@ -31,9 +31,18 @@ h1 {
   margin: 0 0.5em;
 }
 
+.plan--light {
+  color: #00cdac;
+  background: #e5e3e8;
+}
+
 .plan__title {
   text-transform: uppercase;
   margin: 0 0 1em;
+}
+
+.plan__title--dark {
+  color: #000;
 }
 
 .plan__price {
@@ -61,4 +70,13 @@ h1 {
   border-radius: 0.25em;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.plan__button--dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.plan__description--dark {
+  color: #000;
 }
