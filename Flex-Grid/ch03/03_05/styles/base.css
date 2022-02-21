@@ -1,129 +1,148 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400");
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
 }
 
 a {
-    background-color: #3ab6bf;
-    text-decoration: none;
-    color: white;
-    border-radius: .25rem;
-    display: inline-block;
-    padding: .1em .4em;
-    margin-left: .5em;
+  background-color: #3ab6bf;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25rem;
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  margin-left: 0.5em;
 }
 
 main.wrapper {
-    max-width: 1300px;
-    margin: auto;
+  max-width: 1300px;
+  margin: auto;
 }
 
 /* HEADER */
 .hero {
-    background: linear-gradient(#3ab6bf5e, #1a5271c7), url('../images/hero.jpg') no-repeat top right;
-    background-size: cover;
-    color: #fff;
-    padding: 2rem;    
+  background: linear-gradient(#3ab6bf5e, #1a5271c7),
+    url("../images/hero.jpg") no-repeat top right;
+  background-size: cover;
+  color: #fff;
+  padding: 2rem;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px #1a5271;
-    margin-right: 30px;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px #1a5271;
+  margin-right: 30px;
 }
 
 .hero p {
-    font-size: 1.25rem;
-    font-weight: 200;
-    text-shadow: 2px 2px 5px #1a5271;
+  font-size: 1.25rem;
+  font-weight: 200;
+  text-shadow: 2px 2px 5px #1a5271;
 }
 
 .hero a {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-
 
 /* STORIES */
 .stories {
-    padding: 2rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
 }
 
 .stories article {
-    border: 1px solid #e2e2e2;
-    border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .stories figure {
-
+  display: grid;
+  grid-template-rows: 200px 50px;
 }
 
 .stories img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
 }
 
 .stories figcaption {
-   background-color: rgba(0,0,0,.7);
-   width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
 }
 
 .stories figcaption h3 {
-   color: white;
-   padding: .75rem;
-   font-size: 1.25rem;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.25rem;
 }
 
 .stories p {
-   font-size: 1rem;
-   line-height: 1.5;
-   padding: 1rem .75rem;
-   color: #666666;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 0.75rem;
+  color: #666666;
 }
 
 /* FOOTER */
 footer {
-   background-color: #333;
-   padding: .75rem;
-   color: white;
-   text-align: center;
-   font-size: .75rem;
+  background-color: #333;
+  padding: 0.75rem;
+  color: white;
+  text-align: center;
+  font-size: 0.75rem;
 }
 
+/*MY LAYOUT MOBILE*/
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+/*MY LAYOUT MOBILE*/
 
 /* MEDIA QUERY */
 @media screen and (min-width: 800px) {
-    .hero {
-        background-position: center center;
-        padding: 4em 2em;
-    }
-    
-    .hero h1 {
-        text-align: right;
-        max-width: 50%;
-        margin-left: auto;
-    }
-    
-    .hero p {
+  .hero {
+    display: flex;
+    align-items: center;
+    background-position: center center;
+    padding: 4em 2em;
+  }
 
-    }
-    
-    .stories {
+  .hero h1 {
+    text-align: right;
+    max-width: 50%;
+    margin-left: auto;
+  }
 
-    }
+  .hero p {
+    flex: 1;
+  }
 
+  .stories {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
-
