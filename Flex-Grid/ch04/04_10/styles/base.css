@@ -660,6 +660,7 @@ section.problem {
   .problem ul {
     grid-column: 5 / -1;
   }
+  /*******************************************/
 
   .problem ul {
     margin-left: 2rem;
