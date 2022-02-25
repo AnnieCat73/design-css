@@ -29,51 +29,64 @@ TABLE OF CONTENTS
 */
 
 /* ############ 1. Global Styles ############ */
- article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-   display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
- * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   font-size: 100%;
- }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
 
- body > * {
-   font-family: 'Lato', sans-serif;
-   line-height: 1.4;
- }
+body > * {
+  font-family: "Lato", sans-serif;
+  line-height: 1.4;
+}
 
- img {
-   max-width: 100%;
-   height: auto;
- }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
- h1, h2, h3, h4 {
-   font-family: 'Nunito', sans-serif;
-   line-height: 1;
- }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Nunito", sans-serif;
+  line-height: 1;
+}
 
- h1 {
-   font-size: 2.5rem;
- }
+h1 {
+  font-size: 2.5rem;
+}
 
- h2 {
-   font-size: 2rem;
- }
+h2 {
+  font-size: 2rem;
+}
 
- h3 {
-   font-size: 1.6rem;
- }
+h3 {
+  font-size: 1.6rem;
+}
 
- h4 {
-   font-size: 1.4rem;
- }
+h4 {
+  font-size: 1.4rem;
+}
 
- p {
-   line-height: 1.4;
- }
+p {
+  line-height: 1.4;
+}
 
 a {
   color: #36bae6;
@@ -85,7 +98,7 @@ a:hover {
 }
 
 i {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 /* ############ 2. Hero ############ */
@@ -97,9 +110,9 @@ i {
   text-align: center;
   display: grid;
   grid-template-columns: 10px 2fr 10px;
-  grid-template-rows: .5fr 1fr 20px;
+  grid-template-rows: 0.5fr 1fr 20px;
   grid-gap: 20px;
- }
+}
 
 .hero img {
   margin: auto;
@@ -125,17 +138,16 @@ i {
   color: #2abadf;
   font-size: 1rem;
   padding: 5px 10px;
-  margin: .75rem auto 0;
+  margin: 0.75rem auto 0;
 }
-
 
 /* ############ 3. Navigation ############ */
 .logo {
   max-width: 90px;
- }
+}
 
 .navWrap {
-  position: sticky;/*  ** note the menu will not be sticky until we add more page content */
+  position: sticky; /*  ** note the menu will not be sticky until we add more page content */
   top: 0;
   z-index: 99;
   height: 48px;
@@ -167,7 +179,7 @@ input#navToggle ~ label > span::after {
   content: "";
   display: block;
   position: absolute;
-  top: .75rem;
+  top: 0.75rem;
   height: 0.125rem;
   width: 1.75rem;
   opacity: 1;
@@ -205,7 +217,7 @@ input#navToggle ~ label > span::after {
 nav {
   position: absolute;
   z-index: -1;
-  top: 3.0rem;
+  top: 3rem;
   left: -110%;
   width: 100%;
   transition: 0.22s ease-in-out;
@@ -223,16 +235,16 @@ nav::after {
 }
 
 nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav ul li a {
   display: inline-block;
   text-decoration: none;
   width: 100%;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   color: #fff;
-  border-bottom: solid 1px rgba(255,255,255,.5);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
   transition: 0.14s ease-in-out;
 }
 
@@ -244,8 +256,8 @@ nav ul li a:hover {
 nav ul li:last-of-type::before {
   content: "";
   display: block;
-  padding: .5rem;
-  }
+  padding: 0.5rem;
+}
 
 nav .btn {
   background: #fff;
@@ -254,9 +266,9 @@ nav .btn {
   box-shadow: inset 0 0 5px #eeb80c;
   color: #223054;
   width: 40%;
-  padding: 0.25rem .6rem;
+  padding: 0.25rem 0.6rem;
   letter-spacing: 1px;
-  text-shadow: 0 0 1px rgb(19,177,231);
+  text-shadow: 0 0 1px rgb(19, 177, 231);
   display: flex;
   justify-content: center;
   margin: auto;
@@ -300,28 +312,29 @@ nav .btn:hover {
 }
 
 .tripList li {
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 6px;
   border: solid 1px #dedede;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1.8rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto minmax(140px, 1fr) auto;
 }
 
-.tripList h3, .tripList img {
+.tripList h3,
+.tripList img {
   grid-row: 1 / 2;
   grid-column: 1;
 }
 
 .tripList h3 {
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255, 255, 255, 0.5);
   color: #fff;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-bottom: 1rem;
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(51,51,51,.7);
+  text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.7);
   align-self: end;
 }
 
@@ -340,7 +353,6 @@ nav .btn:hover {
 .trips a:hover {
   background-color: #333;
 }
-
 
 /* ############ 5. CTA ############ */
 .cta {
@@ -374,7 +386,6 @@ nav .btn:hover {
   padding-left: 1rem;
   max-width: 700px;
 }
-
 
 /* ############ 6. Team ############ */
 .team {
@@ -435,13 +446,12 @@ nav .btn:hover {
   border-radius: 50%;
   width: 80%;
   box-shadow: 1px 1px 3px #fff, 2px 2px 6px rgb(28 121 138 / 50%);
-  border: solid 2px rgba(255,255,255,.8);
+  border: solid 2px rgba(255, 255, 255, 0.8);
 }
 
 .teamMembers li:nth-child(3) img {
   width: 70%;
 }
-
 
 /* ############ 7. Problem ############ */
 section.problem {
@@ -481,7 +491,7 @@ section.problem {
 .action h3 {
   color: #35b1e8;
   font-style: italic;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .action h1 + p {
@@ -519,13 +529,13 @@ section.problem {
   background-color: #223055;
   border-radius: 0 6px 0 0;
   color: #fff;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   grid-column: 2 / -1;
   align-self: start;
 }
 
 .action li p {
-  padding: .5rem 1rem 1rem;
+  padding: 0.5rem 1rem 1rem;
   grid-column: 2 / -1;
 }
 
@@ -559,13 +569,13 @@ section.problem {
   text-align: center;
   color: #223055;
   padding: 0 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .galleryWrap {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: .5em;
+  grid-gap: 0.5em;
   grid-auto-flow: row dense;
 }
 
@@ -584,6 +594,7 @@ section.problem {
 }
 
 /* ######### 9. Footer ######### */
+/****************************************************/
 footer {
   margin-top: 1rem;
 }
@@ -599,7 +610,8 @@ footer {
   padding-bottom: 1rem;
 }
 /* ######### 9b. Footer > Connect ######### */
-.social, .contactInfo {
+.social,
+.contactInfo {
   background-color: #13b1e7;
   color: #fff;
   padding: 1rem 1rem 0;
@@ -609,7 +621,7 @@ footer {
 .social h3 {
   border-bottom: solid 1px #b6e8ff;
   font-weight: 400;
-  padding-bottom: .25rem;
+  padding-bottom: 0.25rem;
 }
 
 .socialIcons {
@@ -619,7 +631,7 @@ footer {
 
 .socialIcons a {
   color: #223055;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 .socialIcons a:hover {
@@ -660,7 +672,7 @@ footer {
     background-size: cover;
     text-align: left;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: .25fr 1fr .25fr;
+    grid-template-rows: 0.25fr 1fr 0.25fr;
     align-items: center;
   }
 
@@ -670,11 +682,11 @@ footer {
   }
 
   .hero article {
-   max-width: 1000px;
-   grid-column: 3 / 6;
+    max-width: 1000px;
+    grid-column: 3 / 6;
   }
 
-/* ######### 10a-ii. Navigation, Large screen rules ######### */
+  /* ######### 10a-ii. Navigation, Large screen rules ######### */
   .navWrap {
     display: grid;
     grid-template-columns: 100px minmax(auto, 1100px);
@@ -697,14 +709,15 @@ footer {
   }
 
   nav ul li a {
-    border-bottom: none;;
+    border-bottom: none;
   }
 
   nav ul li a:hover {
     background: transparent;
   }
 
-  nav::after, nav ul li:last-of-type::before {
+  nav::after,
+  nav ul li:last-of-type::before {
     display: none;
     padding: initial;
   }
@@ -723,15 +736,15 @@ footer {
     background-color: #223054;
   }
 
-/* ######### 10a-iii. Trips, Large screen rules ######### */
+  /* ######### 10a-iii. Trips, Large screen rules ######### */
   .tripList {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .trips article {
-   width: 90%;
-   display: flex;
-   align-items: center;
+    width: 90%;
+    display: flex;
+    align-items: center;
   }
 
   .trips h1 {
@@ -742,7 +755,7 @@ footer {
     flex: 3;
   }
 
-/* ######### 10a-iv. CTA summaries, Large screen rules ######### */
+  /* ######### 10a-iv. CTA summaries, Large screen rules ######### */
   .cta {
     min-height: 200px;
     display: flex;
@@ -766,13 +779,13 @@ footer {
     margin-right: 1rem;
   }
 
-/* ######### 10a-v. Team, Large screen rules ######### */
+  /* ######### 10a-v. Team, Large screen rules ######### */
   .team {
     max-width: 1000px;
     margin: auto;
     padding: 0 1rem;
     display: grid;
-    grid-template-columns: 1fr .5fr;
+    grid-template-columns: 1fr 0.5fr;
     grid-template-rows: repeat(2, auto);
   }
 
@@ -813,7 +826,9 @@ footer {
     grid-column: 1 / 5;
   }
 
-  .problem h1 ~ p, .problem h3, .problem ul {
+  .problem h1 ~ p,
+  .problem h3,
+  .problem ul {
     grid-column: 5 / -1;
   }
 
@@ -825,7 +840,6 @@ footer {
   .problem img {
     display: none;
   }
-
 
   /* ######### 10a-vii. Actions, Large screen rules ######### */
 
@@ -856,44 +870,52 @@ footer {
     grid-template-columns: 2fr 4fr;
   }
 
-  /* ######### 10a-viii. Footer, Large screen rules ######### */
+  /* ######### 10a-viii. Footer, Large screen rules ######### */ /****************************************************/
   footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.25fr;
   }
 
   .contact {
   }
-
+  /****************************************************/
   .social h3 {
     border-bottom: none;
-    padding: .5rem 1rem .5rem 0;
+    padding: 0.5rem 1rem 0.5rem 0;
     text-align: right;
   }
 
-  .social article{
+  .social article {
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
   }
-
+  /****************************************************/
   .socialIcons {
     border-left: solid #fff 1px;
     font-size: 150%;
-    padding: .5rem 0 .5rem 1rem;
+    padding: 0.5rem 0 0.5rem 1rem;
   }
 
   .socialIcons a {
     display: block;
   }
-
+  /****************************************************/
+  /******************FOOTER ON VERY LARGE SCREENS  see 04/15**********************************/
   .contactInfo {
     background-color: #b6e8ff;
     color: #233156;
     padding: 1rem 0 0;
+    grid-column: 1 / -1;
   }
-
 }
 
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
+  /****************************************************/
   .form {
   }
 
@@ -916,5 +938,4 @@ footer {
     display: inline-block;
     font-size: 180%;
   }
-
 }
