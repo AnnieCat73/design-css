@@ -9,7 +9,22 @@
 </head>
 <body>
     <section>
-        <form action="process.php" method="" id="contact">
+        <!--GET method - not secure so mostly used for simple web forms
+            - called GET as browser asks a server to send back a given resource
+            - not secure as info just appended to the url
+            - allows user to bookmark page once submitted
+            - limited in the amount of content in the submission
+        
+        POST method - ask server, take a look at this data and send me back the
+            appropriate result
+            -browser sends the data to the web server to be processed
+            - adding data to a database
+            - submitting sensitive info such as passwords
+            - can't be bookmarked
+            - can send parameters, including files
+            - no limit of data to be transmitted
+            - far more secure-->
+        <form action="process.php" method="post" id="contact"><!--or method="get"-->
             <fieldset>
                 <legend>Contact Us</legend>
                 
