@@ -9,10 +9,14 @@
 </head>
 
 <body>
+    <!--LABEL
+    - create a caption for a form control 
+    - describes the purpose and function of form elements
+    - tells user purpose of field + helpful to screen readers-->
     <section>
         <form action="" method="post" id="contact">
         
-<!-- Explicit Label -->
+<!-- Explicit Label by giving an id attribute for input and same one on for on label -->
             <fieldset>
                 <legend>Explicit Labels</legend>
                 
@@ -26,8 +30,8 @@
                 <input type="tel" name="phone" id="phone">
             </fieldset>
 
-<!-- Implicit Label -->
-<!--
+<!-- Implicit Label ie label wraps around the input-->
+
             <fieldset>
                 <legend>Implicit Labels</legend>
 
@@ -43,10 +47,10 @@
                     <input type="tel" name="phone2" id="phone2">
                 </label>
             </fieldset>
--->
 
-<!-- Label with Radio Button -->
-<!--
+
+<!-- Implicit is good for Label with Radio Button -->
+
             <fieldset>
                 <legend>Labels with radio buttons</legend>
                     <div class="checks">
@@ -61,7 +65,6 @@
                             Radio 3</label><br>
                     </div>
             </fieldset>
--->
                 
             <input type="submit" id="submit" value="Sign up now">
             
