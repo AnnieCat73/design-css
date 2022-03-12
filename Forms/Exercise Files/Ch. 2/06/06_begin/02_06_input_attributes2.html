@@ -14,17 +14,17 @@
         <fieldset>
             <legend>Input Attributes 2</legend>
             
-            <label for="autofocus">Autofocus</label> 
+            <label for="autofocus">Autofocus</label><!--boolean - highlight a field-->
             <input type="text" name="autofocus" id="autofocus" autofocus>
             
-            <label for="required">Required</label> 
+            <label for="required">Required</label> <!--user must fill out-->
             <input type="text" name="required" id="required" required>
             
             <label for="requiredEmail">Required Email</label> 
             <input type="email" name="requiredEmail" id="requiredEmail" required>
             
              <label for="source">How did you hear about us? (Datalist)</label>
-                <datalist id="sources">
+                <datalist id="sources"><!--pre defined list of options-->
                 <select name="source">
                     <option>please choose...</option>
                     <option value="Social media">Social Media</option>
@@ -37,11 +37,10 @@
             </datalist>
             <input id="source" name="source" list="sources">
                 
-<!-- try adding 2 email addresses to the first field, you get an error but the second one allows you to do this seamlessly -->
-                <label for="email1">Email (one)</label>
+
                 <input type="email" name="email1" id="email1" required>
                 
-                <label for="email2">Email (multiple)</label>
+                <label for="email2">Email (multiple)</label><!--can enter multiple emails-->
                 <input type="email" name="email2" id="email2" multiple required>
                 
                 <label for="file">File:</label> 
