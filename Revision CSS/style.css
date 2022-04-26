@@ -1,0 +1,155 @@
+/* reset */
+ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+ }
+
+body {
+  line-height: 1.6;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+
+/* typography */
+
+h1,
+h2,
+h3,
+.section-subtitle {
+  font-family: sans-serif;
+}
+
+
+a:hover,
+a:focus {
+  color: #444444;
+}
+
+
+/*Animate an underline in CSS*/
+
+header {
+  max-width: 60rem;
+  margin: 0rem auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  
+  
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2em;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  padding: 3rem 0;
+  background-color: rgb(177, 162, 145);
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: magenta;
+  position: relative;
+}
+
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 10rem;
+  height: 0.1em;
+  background-color: #444444;
+  bottom: 4px;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all .3s ease-in-out 0.5s;
+}
+
+.nav-link:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+main {
+  margin-top: 150px;
+}
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  
+}
+
+section {
+  z-index: -6;
+}
+
+/*Animation example*/
+h1 {
+  color:blueviolet;
+  font-size: 2rem;
+  font-weight: bold;
+  animation-name: color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes color {
+  0%   {color:red; ;}
+  25%  {color:yellow; }
+  50%  {color:blue; }
+  75%  {color:green; }
+  100% {color:red; }
+}
+
